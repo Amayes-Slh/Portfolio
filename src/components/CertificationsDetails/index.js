@@ -130,11 +130,11 @@ const Button = styled.a`
 `;
 
 const index = ({ openModal, setOpenModal }) => {
-  const project = openModal?.project;
+  const Certificate = openModal?.Certificate;
   return (
     <Modal
       open={true}
-      onClose={() => setOpenModal({ state: false, project: null })}
+      onClose={() => setOpenModal({ state: false, Certificate: null })}
     >
       <Container>
         <Wrapper>
@@ -145,22 +145,22 @@ const index = ({ openModal, setOpenModal }) => {
               right: "20px",
               cursor: "pointer",
             }}
-            onClick={() => setOpenModal({ state: false, project: null })}
+            onClick={() => setOpenModal({ state: false, Certificate: null })}
           />
-          <Image src={project?.image} />
-          <Title>{project?.title}</Title>
-          <Date>{project.date}</Date>
+          <Image src={Certificate?.image} />
+          <Title>{Certificate?.title}</Title>
+          <Date>{Certificate.date}</Date>
           <Tags>
-            {project?.tags.map((tag) => (
+            {Certificate?.tags.map((tag) => (
               <Tag>{tag}</Tag>
             ))}
           </Tags>
-          <Desc>{project?.description}</Desc>
+          <Desc>{Certificate?.description}</Desc>
           <ButtonGroup>
-            <Button dull href={project?.github} target="new">
+            <Button dull href={Certificate?.github} target="new">
               View Code
             </Button>
-            <Button href={project?.webapp} target="new">
+            <Button href={Certificate?.webapp} target="new">
               View Live App
             </Button>
           </ButtonGroup>
