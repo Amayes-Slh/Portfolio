@@ -1,19 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 
-const Button = styled.button`
-  display: none;
-  width: 100%;
-  padding: 10px;
-  background-color: ${({ theme }) => theme.white};
-  color: ${({ theme }) => theme.text_black};
-  font-size: 14px;
-  font-weight: 700;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: all 0.8s ease-in-out;
-`;
 const Card = styled.div`
   width: 330px;
   height: 490px;
@@ -32,9 +19,6 @@ const Card = styled.div`
     box-shadow: 0 0 50px 4px rgba(0, 0, 0, 0.6);
     filter: brightness(1.1);
   }
-  &:hover ${Button} {
-    display: block;
-  }
 `;
 
 const Image = styled.img`
@@ -43,24 +27,6 @@ const Image = styled.img`
   background-color: ${({ theme }) => theme.white};
   border-radius: 10px;
   box-shadow: 0 0 16px 2px rgba(0, 0, 0, 0.3);
-`;
-
-const Tags = styled.div`
-  width: 100%;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 4px;
-`;
-
-const Tag = styled.span`
-  font-size: 12px;
-  font-weight: 400;
-  color: ${({ theme }) => theme.primary};
-  background-color: ${({ theme }) => theme.primary + 15};
-  padding: 2px 8px;
-  border-radius: 10px;
 `;
 
 const Details = styled.div`
@@ -94,9 +60,9 @@ const Date = styled.div`
 `;
 
 const Description = styled.div`
-  font-weight: 400;
+  font-size: 12px;
+  font-weight: 20;
   color: ${({ theme }) => theme.text_secondary + 99};
-  overflow: hidden;
   margin-top: 8px;
   display: -webkit-box;
   max-width: 100%;
@@ -105,19 +71,14 @@ const Description = styled.div`
   text-overflow: ellipsis;
 `;
 
-const CertifCards = ({ certficate, setOpenModal }) => {
+const CertifCards = ({ certificate }) => {
   return (
-    <Card onClick={() => setOpenModal({ state: true, certficate: certficate })}>
-      <Image src={certficate.image} />
-      <Tags>
-        {certficate.tags?.map((tag, index) => (
-          <Tag>{tag}</Tag>
-        ))}
-      </Tags>
+    <Card>
+      <Image src={certificate.image} />
       <Details>
-        <Title>{certficate.title}</Title>
-        <Date>{certficate.date}</Date>
-        <Description>{certficate.description}</Description>
+        <Title>{certificate.title}</Title>
+        <Date>{certificate.date}</Date>
+        <Description>{certificate.description}</Description>
       </Details>
     </Card>
   );

@@ -1,37 +1,21 @@
 import React from "react";
-import {
-  Container,
-  Wrapper,
-  Title,
-  Desc,
-  CardContainer,
-} from "../Projects/ProjectsStyle";
+import { Container, Wrapper, Title, Desc, CardContainer } from "./CertifStyle";
 import CertifCard from "../Cards/CertifCard";
-import { certficate } from "../../data/data";
+import { certificate } from "../../data/data";
 
-const Certifications = ({ openModal, setOpenModal }) => {
+const Certifications = () => {
   return (
     <Container id="certifications">
       <Wrapper>
         <Title>Certifications</Title>
-        <Desc>I have worked on a wide range of Certifications.</Desc>
+        <Desc>
+          In my free time, I have dedicated myself to acquiring multiple
+          certifications to enhance my skills and expertise.
+        </Desc>
         <CardContainer>
-          {certficate.map((certficate) => (
-            <CertifCard
-              certficate={certficate}
-              openModal={openModal}
-              setOpenModal={setOpenModal}
-            />
+          {certificate.map((certificate) => (
+            <CertifCard certificate={certificate} />
           ))}
-          {certficate
-            .filter((item) => item.category)
-            .map((certficate) => (
-              <CertifCard
-                certficate={certficate}
-                openModal={openModal}
-                setOpenModal={setOpenModal}
-              />
-            ))}
         </CardContainer>
       </Wrapper>
     </Container>

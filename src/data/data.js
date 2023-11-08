@@ -141,7 +141,7 @@ export const skills = [
   },
 ];
 
-export const certficate = [
+export const certificate = [
   {
     id: 0,
     image: Certif_Python,
@@ -156,7 +156,7 @@ export const certficate = [
     title: "ReactJs",
     date: "Oct 16 2023",
     description:
-      "In this 13-hour React.js course, I delved into a comprehensive curriculum, covering a wide range of topics. I began with a refresher on ES6, embracing modern JavaScript features like arrow functions, const, let, and destructuring. The course then guided me through the fundamentals of React, teaching me how to manage component data with State and Props. I learned to create multi-page applications with React-Router, centralize State using the Context API, and harness the power of React Hooks. The course also equipped me to utilize Redux with React, handle API consumption effectively, and implement a 'dark/light mode' feature. I explored conditional rendering, even creating a blog within the course's scope. These are just a few highlights from this extensive journey, which was attended by over 5,000 fellow learners, and boasts an impressive rating of 4.6 stars",
+      "In a 13-hour React.js course, I embraced modern JavaScript features like arrow functions and destructuring. The course taught me React fundamentals, including State and Props management. I gained expertise in creating multi-page apps with React-Router, centralizing State via the Context API, and leveraging React Hooks. Additionally, I learned to use Redux with React, handle API interactions.This course was attended by over 5,000 learners, boasting an impressive 4.6-star rating.",
   },
   {
     id: 2,
