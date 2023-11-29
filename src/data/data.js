@@ -218,7 +218,7 @@ export const projects = [
     tags: ["HTML", "CSS", "React", "MUI"],
     category: "web app",
     github: "https://github.com/Amayes-Slh/Nuki-Food",
-    webapp: "",
+    webapp: "https://nuki-food.netlify.app/",
   },
   {
     id: 1,
