@@ -5,6 +5,7 @@ const Certif_Python = require("../images/Certification Python.png");
 const Certif_React = require("../images/Certification React.png");
 const Certif_Js = require("../images/Certification JS.png");
 const Certif_TS = require("../images/Certification TypeScript.png");
+const NukiFood_image = require("../images/Nukifood.png");
 export const Bio = {
   name: "Amayes SALHI",
   roles: ["Software Engineer", "Front-end Developer"],
@@ -209,6 +210,18 @@ export const experiences = [
 export const projects = [
   {
     id: 0,
+    title: "Nuki Food",
+    date: "Nov 2023",
+    description:
+      "Excited to present Nuki Food, a React JS project for a captivating landing page of an Asian restaurant. It offers a polished interface highlighting the restaurant's dishes and ensures smooth navigation.",
+    image: NukiFood_image,
+    tags: ["HTML", "CSS", "React", "MUI"],
+    category: "web app",
+    github: "https://github.com/Amayes-Slh/Nuki-Food",
+    webapp: "",
+  },
+  {
+    id: 1,
     title: "DataBridge CRM",
     date: "Sep 2023 - Oct 2023",
     description:
@@ -221,7 +234,7 @@ export const projects = [
     webapp: "",
   },
   {
-    id: 1,
+    id: 2,
     title: "Travelling Mobile Application",
     date: "Sep 2023",
     description:
@@ -234,7 +247,7 @@ export const projects = [
     webapp: "",
   },
   {
-    id: 2,
+    id: 3,
     title: "E-Commerce App",
     date: "Oct 2023",
     description:
@@ -254,7 +267,7 @@ export const projects = [
     webapp: "",
   },
   {
-    id: 3,
+    id: 4,
     title: "BookFlix",
     date: "Feb 2023",
     image: BookFlix_image,
@@ -266,7 +279,7 @@ export const projects = [
     webapp: "",
   },
   {
-    id: 4,
+    id: 5,
     title: "Weather App",
     date: "Sep 2023",
     description:
@@ -278,7 +291,7 @@ export const projects = [
     webapp: "",
   },
   {
-    id: 5,
+    id: 6,
     title: "Face Recognition",
     date: "Feb 2023",
     description:
@@ -291,7 +304,7 @@ export const projects = [
     webapp: "",
   },
   {
-    id: 6,
+    id: 7,
     title: "Astar ⭐️ ",
     date: "Oct 2023",
     description:
@@ -304,7 +317,7 @@ export const projects = [
     webapp: "",
   },
   {
-    id: 7,
+    id: 8,
     title: "Smart Watch",
     date: "Apr 2022",
     description:
@@ -317,7 +330,7 @@ export const projects = [
     webapp: "",
   },
   {
-    id: 8,
+    id: 9,
     title: "Meteorological simulation system",
     date: "Nov 2021",
     description:
